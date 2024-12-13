@@ -2,7 +2,6 @@ package com.example.simplegameloopandroidapp;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
-import android.util.Log;
 
 public class GameObject {
 
@@ -11,7 +10,7 @@ public class GameObject {
    private float speedX; // Speed in pixels per second
    private float speedY; // Speed in pixels per second
    private float rotationAngle;
-   private float rotationDirection = 100f;
+   private float rotationDirection = 200f;
 
    private Bitmap bitmap;
    private int screenWidth;
@@ -22,10 +21,10 @@ public class GameObject {
       this.screenWidth = screenWidth;
       this.screenHeight = screenHeight;
 
-      x = 100;
-      y = 100;
-      speedX = 150; // Assuming these are meant to be pixels per second
-      speedY = 140; // Assuming these are meant to be pixels per second
+      y = 150;
+      x = 150;
+      speedX = 170; // Assuming these are meant to be pixels per second
+      speedY = 170; // Assuming these are meant to be pixels per second
    }
 
    public void update(double deltaTime) {
